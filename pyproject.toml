@@ -4,9 +4,21 @@ version = "0.1.0"
 description = "KAS project for the Test-Automation-Controller (TAC)"
 requires-python = ">=3.12"
 dependencies = [
+    "commitizen>=4.10.0",
     "pre-commit>=4.4.0",
     "pre-commit-uv>=4.2.0",
 ]
 
 [tool.uv]
 link-mode = "copy"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "semver"
+version_provider = "uv"
+update_changelog_on_bump = true
+major_version_zero = true
+always_signoff = true
+annotated_tag = true
+gpg_sign = true
