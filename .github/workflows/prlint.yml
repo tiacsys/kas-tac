@@ -1,0 +1,19 @@
+name: PR linting
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+jobs:
+  validate-pr-title:
+    runs-on: ubuntu-24.04
+
+    environment: prlint
+
+    name: "PR Conventional Commit Validation"
+    steps:
+      - uses: ytanikin/pr-conventional-commits@1.4.2
+        with:
+          task_types: ${{ vars.PR_TASK_TYPES }}
+          custom_labels: ${{ vars.PR_CUSTOM_LABELS }}
+          add_scope_label: true
