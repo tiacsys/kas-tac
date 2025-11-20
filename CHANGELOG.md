@@ -1,3 +1,13 @@
+## 0.3.0 (2025-11-20)
+
+### Feat
+
+- **github**: customize cocogitto and sync with cz bump
+
+### Fix
+
+- **git**: breaking changes will bump the major version number
+
 ## 0.2.0 (2025-11-20)
 
 ### Feat
