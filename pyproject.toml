@@ -1,6 +1,6 @@
 [project]
 name = "kas-tac"
-version = "0.1.0"
+version = "0.2.0"
 description = "KAS project for the Test-Automation-Controller (TAC)"
 requires-python = ">=3.12"
 dependencies = [
