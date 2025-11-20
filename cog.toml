@@ -1,0 +1,17 @@
+branch_whitelist = ["main"]
+ignore_merge_commits = true
+ignore_fixup_commits = true
+
+[commit_types]
+bump = { changelog_title = "", omit_from_changelog = true }
+chore = { changelog_title = "", omit_from_changelog = true }
+ci = { changelog_title = "", omit_from_changelog = true }
+docs = { changelog_title = "", omit_from_changelog = true }
+feat = { changelog_title = "Feat", order = 0 }
+fix = { changelog_title = "Fix", order = 1 }
+perf = { changelog_title = "Perf", order = 3 }
+refactor = { changelog_title = "Refactor", order = 2 }
+revert = { changelog_title = "", omit_from_changelog = true }
+style = { changelog_title = "", omit_from_changelog = true }
+test = { changelog_title = "", omit_from_changelog = true }
+wip = { changelog_title = "", omit_from_changelog = true }
